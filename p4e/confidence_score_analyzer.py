@@ -2,7 +2,7 @@ import re
 try:
     hand = open('mbox-short.txt')
 except FileNotFoundError:
-    print("Dosya bulunamadı!")
+    print("File not found!")
     exit()
 
 numlist = list()
@@ -19,4 +19,4 @@ if len(numlist) > 0:
     print("Maximum Confidence:", max(numlist))
     print("Minimum Confidence:", min(numlist))
 else:
-    print("Eşleşen veri bulunamadı.")
+    print("No matching data.")
